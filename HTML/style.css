@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&family=Roboto:wght@100;300;500&display=swap');
+
+:root{
+    --lightpink:lightpink;
+}
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+
+}
+
+*::selection{
+    background: var(--lightpink);
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3);
+    width: 100%;
+}
+
+header .heading{
+    font-size: 3rem;
+    color: purple;
+    padding: 1rem;
+    text-align: left;
+    background-color: #fff;
+}
+
+header #menu{
+    font-size: 3rem;
+    color: #666;
+    cursor: pointer;
+    margin: 1rem;
+    display: none;
+}
+
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background: var(--lightpink);
+    padding: 1rem;
+    font-style: #fff;
+}
+
+
+header .navbar ul li{
+    margin: 0 1.5rem;
+    color: #fff;
+}
+
+header .navbar ul li{
+    font-size: 2rem;
+    color: #fff;
+}
+
+header .navbar ul li a:hover{
+    color: #444;
+}
+
+.image{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: url(../feminism/image10.jpg);
+    background-size: 100%;
+    background-position: 75%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
+   
+}
+
+.main{
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: url(../feminism/image12.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
+
+}
+
+ /* .aboutimg{
+    min-height: 100vh;
+    display: flex;
+    align-items: right;
+    justify-content: space-around;
+    background: url(../feminism/image50.jpg);
+    background-size: 50%;
+    background-position: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
+}  */
+
+
+.about{
+    min-height: 100vh;
+    background-color: plum;
+    padding: 20rem 0;
+}
+
+.about .topic{
+    font-size: xx-large;
+    color:purple;
+    align-items: center;
+   
+}
+.about .content{
+    font-size: large;
+    color: white;
+    align-items: center;
+   
+}
+
+
+
+
+.service{
+    min-height: 100vh;
+    background: palevioletred;
+}
+.service .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10rem 0;
+}
+.service .box-container .box{
+    background: #fff;
+    margin:2rem;
+    padding:1rem;
+    width: 50rem;
+    text-align: center;
+    box-shadow: 0 0 0 .3  rgba(0 , 0 , 0, .3);
+}
+.service .box-container .box h3{
+    font-size: 2rem;
+    color: #444;
+}
+.service .box-container .box p{
+    font-size: 1.3rem;
+    color: #666;
+    padding: 1rem;
+}
+
+
+
+
+
+.plan{
+    min-height: 100vh;
+    background: #eee;
+}
+
+.plan .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 0;
+}
+
+.plan .box-container .box{
+    background: #fff;
+    margin: 2rem;
+    padding: 2rem;
+    width: 40rem;
+    text-align: center;
+    box-shadow: 0 0 .3rem rgba(0 , 0 , 0, .3);
+    position: relative;
+    padding-top: 15rem;
+}
+
+.plan .box-container .box .title{
+    font-size: xx-large;
+    color: palevioletred;
+    padding: 2rem  0;
+}
+
+.plan .box-container .box .price{
+    background: var(--lightpink);
+    color:#fff;
+    border-radius: 50%;
+    margin: 1rem auto;
+    height: 20rem;
+    width: 20rem;
+    line-height: 20rem;
+    text-align: center;
+}
+.plan .box-container .box .price h1{
+    font-size: xx-large;
+}
+
+.plan .box-container .box .price span{
+    font-size:xx-large;
+
+}
+.plan .box-container .box .price ul li{
+    color: #666;
+   list-style: none;
+    font-size:large;
+    padding: 1rem  0;
+}
+.plan .box-container .box .btn{
+    font-size: xx-large;
+    color: palevioletred;
+    cursor: pointer;
+    padding: 5rem 0;
+}
+
+
+
+
+
+.contact{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact form{
+    flex:1 1 40rem;
+    padding: 2rem;
+    margin: 1rem;
+    margin-top: 4rem;
+    box-shadow:0 0 .5rem  rgba(0 , 0 , 0, .3);
+}
+
+.contact .content{
+    flex: 1 1 40rem;
+    padding:3rem 1rem;
+}
+
+.contact form .box{
+    width: 100%;
+    color: palevioletred;
+    height: 4rem;
+    font-size: large;
+    border-bottom: .2rem solid rgba(0, 0, 0, .3);
+    text-transform: none;
+    margin: 1rem 0;
+}
+
+.contact form .box::placeholder{
+    text-transform: capitalize;
+}
+.contact form .box:focus{
+   border-color: var(--lightpink);
+}
+.contact form .message{
+    height: 15rem;
+    resize: none;
+}
+.contact .content h3{
+    font-size: 4rem;
+    color: palevioletred;
+}
+.contact .content p{
+    font-size: 1.9rem;
+    color: #666;
+    padding: 1rem 0;
+}
+.contact .content .icons{
+    font-size: 1.7rem;
+    color: #333;
+    padding: .5rem 0;
+}
+.contact .btn{
+    font-size: 1.8rem;
+    color: palevioletred;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:760px){
+    html{
+        font-size: 55%;
+        
+    }
+    
+}
+
+
+@media (max-width:500px){
+    html{
+        font-size: 50%;
+        
+    }
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 .1rem;
+}
+
+header #menu{
+    display: block;
+}
+header .navbar{
+    position: fixed;
+    top: 6.2rem; right: -120%;
+    height: 100%;
+    width: 100%;
+    border-top: .2rem solid rgba(0 , 0 , 0, .3);
+}
+
+header .navbar ul{
+    height: 100%;
+    width: 100;
+    flex-flow: column;
+    background: #fff;
+    padding-bottom: 15rem;
+}
+
+header .navbar ul li{
+    text-align: center;
+    width: 100%;
+    margin:1rem 0;
+}
+
+header .navbar ul li a{
+    font-size: 4rem;
+    color: #333;
+    display: block;
+}
+
+
+
+header .navbar ul li a:hover{
+    color: var(--orange);
+}
+
+.fa-times{
+    transform: rotate(100deg);
+}
+
+header .navbar .nav-toggle{
+   right: 0;
+}
+
+
+
+
+
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
